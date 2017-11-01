@@ -1,0 +1,183 @@
+/* Color Palette
+#16BAC5 - Pacific Blue
+#3E99F9 - Brilliant Azure
+#EFE9F4 - Anti-Flash White
+#171D1C - Eerie Black
+#5863F8 - Very light blue
+*/
+
+/* Global Styles
+---------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: white;
+  color: #16BAC5;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid;
+}
+a.btn:hover {
+  background: #5863F8;
+  color: #EFE9F4;
+}
+/* Download button */
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #16BAC5;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+/*.col-narrow {
+  width: 30%;
+  float: left;
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 75px;
+}*/
+/* Header and Footer
+----------------------------------*/
+header, footer {
+  background: #EFE9F4;
+  color: #171D1C;
+}
+/*header*/
+header {
+  padding-top: 50px;
+  position: relative;
+}
+.about-me {
+  background: linear-gradient(rgba(239, 233, 244, 0.9),
+              rgba(239, 233, 244, 0.8)),
+              url(../images/dmc.jpg) no-repeat center fixed;
+  background-size: cover;
+  border: 1px solid;
+}
+header h1, header h2 {
+  color: #171D1C;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  font-size: 25px;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/*Nav*/
+nav {
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* Work Experience
+----------------------------------*/
+.work {
+  background: #3E99F9;
+  border: 1px solid;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Education
+----------------------------------*/
+.education {
+  background: linear-gradient(rgba(62, 153, 249, 0.8),
+              rgba(62, 153, 249, 0.6)),
+              url(../images/arcade.jpg) no-repeat fixed;
+  background-size: cover;
+  border: 1px solid;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Media Queries
+----------------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
